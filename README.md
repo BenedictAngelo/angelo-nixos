@@ -231,19 +231,6 @@ Avoid printing real secret contents in terminal logs, screenshots, or support re
 - Keep file ownership and permissions as restrictive as the consuming service allows.
 - Back up private keys securely and ensure each target machine is an authorized recipient.
 
-## Repository hygiene
-
-The `.gitignore` excludes local build outputs, development state, editor files, local environment files, and common private-key filenames. It intentionally does not ignore the encrypted SOPS YAML or the wallpaper directory, because the configuration references wallpaper assets.
-
-Before publishing, review at least:
-
-- `hosts/nixos-btw/variables.nix` for your personal Git email and local preferences;
-- `hosts/nixos-btw/hardware.nix` for filesystem UUIDs and machine-specific details;
-- `modules/home/hyprland/face.jpg` and other image assets for suitability for public distribution;
-- `.sops.yaml` and the encrypted secrets file to confirm that no private key or plaintext secret is present.
-
-The Git history in an existing clone is separate from the working tree. Removing a large file from the current directory or adding it to `.gitignore` does not remove it from previous commits. Review repository history separately before publishing.
-
 ## License
 
 No license is declared in this repository. Add a license only after deciding how you want others to use, modify, and redistribute the project.
