@@ -1,0 +1,36 @@
+# Nix build outputs and local development state
+/result
+/result-*
+/.direnv/
+/.devenv/
+
+# Editor and operating-system files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Local environment files (keep example templates)
+.env
+.env.*
+!.env.example
+!.env.*.example
+
+# Private key material
+keys.txt
+**/keys.txt
+*.key
+*.pem
+
+# Local logs and temporary files
+*.log
+*.tmp
+
+# Age private keys
+*.agekey
+age.key
+age-identity
+age-identity.txt
+# Local backup files
+modules/home/scripts/qs-wallpapers.nix.backup
