@@ -33,6 +33,18 @@
     spice-gtk
     swtpm
     lazydocker
+
+    # Network emulation
+    ubridge
+    dynamips
+    vpcs
+
+    gns3-gui
+    gns3-server
+
+    # Useful utilities
+    inetutils
+    wireshark
   ];
   # Only uncomment if you want to autostart network bridge upon boot
   /*
