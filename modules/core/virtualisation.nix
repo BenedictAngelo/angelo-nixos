@@ -42,7 +42,7 @@
     gns3-gui
     gns3-server
 
-    cisco-packet-tracer
+    cisco-packet-tracer_9
 
     # Useful utilities
     inetutils
