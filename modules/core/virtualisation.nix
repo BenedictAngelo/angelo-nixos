@@ -42,6 +42,8 @@
     gns3-gui
     gns3-server
 
+    cisco-packet-tracer
+
     # Useful utilities
     inetutils
     wireshark
